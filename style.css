@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    display: flex;
+    height: 564px;
+}
+
+.banner,
+.form {
+    margin: 0 auto;
+    width: 1500px;
+}
+
+.banner__item {
+    flex: 1;
+    background-color: #a8a9ad;
+}
+
+.banner__item--has-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner__item--has-content:first-child {
+    border: solid 1px red;
+}
+
+.banner__item:nth-child(2) .banner__sub-item {
+    border-right-width: 0;
+}
+
+.banner__sub-item {
+    width: 100%;
+    height: 50%;
+    border: solid 12px #fff;
+    border-top-width: 0;
+}
+
+.banner__sub-item--red {
+    background-color: red;
+}
+
+.banner__sub-item--red:hover {
+    background-color: green;
+}
+
+#greetings {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.form label {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.form input {
+    margin-top: 5px;
+}

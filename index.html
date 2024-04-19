@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Practical Exam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- using BEM naming conventian for css class -->
+    <div class="banner">
+        <div class="banner__item"></div>
+        <div class="banner__item banner__item--has-content">
+            <div class="banner__sub-item banner__sub-item--red"></div>
+            <div class="banner__sub-item"></div>
+        </div>
+        <div class="banner__item banner__item--has-content">
+            <div class="banner__sub-item"></div>
+            <div class="banner__sub-item"></div>
+        </div>
+        <div class="banner__item"></div>
+    </div>
+    <div id="greetings" onmouseover="changeText('Jomar Edaño')" onmouseleave="changeText('Hello')"></div>
+    <div class="form">
+        <h2>Form With PHP</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age"><br>
+            <input type="submit" value="Button">
+        </form>
+    </div>
+</body>
+<script type="text/javascript">
+    var greetings = "Hello";
+    changeText(greetings);
+    function changeText(text) {
+        document.getElementById('greetings').innerHTML = text;
+    }
+</script>
+
+</html>
